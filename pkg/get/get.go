@@ -129,7 +129,7 @@ func findGitHubRelease(url string) (string, error) {
 
 func MakeTools() []Tool {
 	tools := []Tool{
-		Tool{
+		{
 			Owner: "openfaas",
 			Repo:  "faas-cli",
 			Name:  "faas-cli",
@@ -145,7 +145,7 @@ func MakeTools() []Tool {
 {{.Name}}-arm64
 {{- end -}}`,
 		},
-		Tool{
+		{
 			Owner:       "kubernetes",
 			Repo:        "kubernetes",
 			Name:        "kubectl",
